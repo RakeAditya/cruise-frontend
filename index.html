@@ -10,36 +10,39 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="py-4 px-10 bg-orange-400 shadow md:flex md:items-center md:justify-between">
+		<nav class="py-5 px-10 bg-orange-400 shadow lg:flex lg:items-center lg:justify-between min-w-[250px]">
 			<div class="flex justify-between items-center">
 				<span class="text-3xl font-bold tracking-wider leading-8 font-[Poppins] cursor-pointer"> Cruise </span>
 
-				<span class="text-3xl cursor-pointer mx-2 md:hidden block">
+				<span class="text-3xl cursor-pointer mx-2 lg:hidden block">
 					<ion-icon name="menu" onclick="Menu(this)"></ion-icon>
 				</span>
 			</div>
 
 			<ul
-				class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-orange-400 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+				class="-mt-1 lg:flex lg:items-center z-[10] lg:z-auto lg:static absolute bg-orange-400 w-full left-0 lg:w-auto lg:py-0 py-6 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
 			>
-				<li class="mx-4 my-5 md:my-0">
+				<li class="mx-4 my-2 lg:my-0">
 					<a href="#" class="text-lg hover:text-cyan-200 font-semibold duration-500">HOME</a>
 				</li>
-				<li class="mx-4 my-6 md:my-0">
-					<a href="#" class="text-lg hover:text-cyan-200 font-semibold duration-500">SERVICE</a>
-				</li>
-				<li class="mx-4 my-6 md:my-0">
+				<li class="mx-4 my-6 lg:my-0">
 					<a href="#" class="text-lg hover:text-cyan-200 font-semibold duration-500">ABOUT</a>
 				</li>
-				<li class="mx-4 my-6 md:my-0">
-					<a href="#" class="text-lg hover:text-cyan-200 font-semibold duration-500">CONTACT</a>
+				<li class="mx-4 my-6 lg:my-0">
+					<a href="#" class="text-lg hover:text-cyan-200 font-semibold duration-500">EVENT</a>
 				</li>
-				<li class="mx-4 my-6 md:my-0">
-					<a href="#" class="text-lg hover:text-cyan-200 font-semibold duration-500">BLOG'S</a>
+				<li class="mx-4 my-6 lg:my-0">
+					<a href="#" class="text-lg hover:text-cyan-200 font-semibold duration-500">GALLARY</a>
+				</li>
+				<li class="mx-4 my-6 lg:my-0">
+					<a href="#" class="text-lg hover:text-cyan-200 font-semibold duration-500">FEEDBSCK</a>
 				</li>
 
+				<li class="mx-4 my-6 lg:my-0">
+					<a href="#" class="text-lg hover:text-cyan-200 font-semibold duration-500">CONTACT</a>
+				</li>
 				<button
-					class="bg-orange-400 border-2 rounded-md text-white font-[Poppins] text-lg font-semibold tracking-wide duration-500 px-6 py-2 mx-4 hover:bg-black text-lg rounded"
+					class="bg-orange-400 border-2 rounded-md text-white font-[Poppins] text-xl font-semibold tracking-wider capitalize duration-500 px-6 py-2 mx-4 hover:bg-black rounded"
 				>
 					Get started
 				</button>
@@ -47,12 +50,12 @@
 			</ul>
 		</nav>
 		<!-- front page image -->
-		<div class="h-[calc(100vh-80px)] relative">
-			<img src="assets/img1.jpg" alt="image" class="h-full w-full object-cover opacity-[1]" />
-			<div class="absolute top-0 w-full h-full bg-gray-600 opacity-[0.3]"></div>
+		<div class="h-[calc(100vh-76px)] lg:h-[calc(100vh-83px)] relative min-w-[250px]">
+			<img src="assets/img1.jpg" alt="image" class="h-full w-full object-cover opacity-[1] z-[-1]" />
+			<div class="absolute top-0 w-full h-full bg-gray-600 opacity-[0.3] z-[0]"></div>
 			<!-- heading -->
-			<div class="absolute top-0 w-full h-full flex items-center flex-col justify-center">
-				<h1 class="text-5xl md:text-6xl text-white tracking-wide font-bold opacity-1 mb-10">Start your Cruise Journey here</h1>
+			<div class="absolute top-0 w-full h-full flex items-center flex-col justify-center z-[1]">
+				<h1 class="text-5xl md:text-6xl text-white tracking-wide font-bold opacity-1 mb-10 text-center">Start your Cruise Journey here</h1>
 				<button
 					class="border-2 rounded-md text-white font-[Poppins] font-semibold tracking-wide duration-500 px-8 py-4 mx-4 text-xl hover:text-black hover:bg-white"
 				>
