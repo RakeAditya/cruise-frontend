@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="py-6 px-10 bg-orange-400 shadow md:flex md:items-center md:justify-between">
+		<nav class="py-4 px-10 bg-orange-400 shadow md:flex md:items-center md:justify-between">
 			<div class="flex justify-between items-center">
 				<span class="text-3xl font-bold tracking-wider leading-8 font-[Poppins] cursor-pointer"> Cruise </span>
 
@@ -39,7 +39,7 @@
 				</li>
 
 				<button
-					class="bg-cyan-400 text-white font-[Poppins] font-semibold tracking-wide duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 text-lg rounded"
+					class="bg-orange-400 border-2 rounded-md text-white font-[Poppins] text-lg font-semibold tracking-wide duration-500 px-6 py-2 mx-4 hover:bg-black text-lg rounded"
 				>
 					Get started
 				</button>
@@ -47,13 +47,17 @@
 			</ul>
 		</nav>
 		<!-- front page image -->
-		<div class="border border-solid border-red-900 h-[calc(100vh-92px)] relative">
+		<div class="h-[calc(100vh-80px)] relative">
 			<img src="/assets/img1.jpg" alt="image" class="h-full w-full object-cover opacity-[1]" />
-			<div class="border-2 border-green-900 absolute top-0 w-full h-full bg-gray-600 opacity-[0.3]">
-				<!-- heading -->
-				<div>
-					<h1>Start your Cruise Journey here</h1>
-				</div>
+			<div class="absolute top-0 w-full h-full bg-gray-600 opacity-[0.3]"></div>
+			<!-- heading -->
+			<div class="absolute top-0 w-full h-full flex items-center flex-col justify-center">
+				<h1 class="text-5xl md:text-6xl text-white tracking-wide font-bold opacity-1 mb-10">Start your Cruise Journey here</h1>
+				<button
+					class="border-2 rounded-md text-white font-[Poppins] font-semibold tracking-wide duration-500 px-8 py-4 mx-4 text-xl hover:text-black hover:bg-white"
+				>
+					Load More
+				</button>
 			</div>
 		</div>
 	</body>
