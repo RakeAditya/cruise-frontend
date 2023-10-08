@@ -11,7 +11,8 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="py-5 px-10 bg-orange-400 shadow lg:flex lg:items-center lg:justify-between min-w-[250px]">
+		<!-- rgb(23 45 67 / var(--tw-bg-opacity)) -->
+		<nav class="py-6 px-10 bg-[rgb(23,45,61)] shadow lg:flex lg:items-center lg:justify-between min-w-[300px]">
 			<div class="flex justify-between items-center">
 				<span class="text-6xl font-bold tracking-wider text-white leading-8 font-[Poppins] cursor-pointer"> Lake Queen </span>
 
@@ -21,7 +22,7 @@
 			</div>
 
 			<ul
-				class="-mt-1 lg:flex lg:items-center z-[10] lg:z-auto lg:static absolute bg-orange-400 w-full left-0 lg:w-auto lg:py-0 py-6 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+				class="-mt-1 lg:flex lg:items-center z-[10] lg:z-auto lg:static absolute bg-[rgb(23,45,61)] w-full left-0 lg:w-auto lg:py-0 py-6 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
 			>
 				<li class="mx-4 my-2 lg:my-0">
 					<a href="#" class="text-lg text-white hover:text-cyan-200 font-semibold duration-500">HOME</a>
@@ -43,7 +44,7 @@
 					<a href="#" class="text-lg text-white hover:text-cyan-200 font-semibold duration-500">CONTACT</a>
 				</li>
 				<button
-					class="bg-orange-400 border-2 rounded-md text-white font-[Poppins] text-xl font-semibold tracking-wider capitalize duration-500 px-6 py-2 mx-4 hover:bg-black rounded"
+					class="bg-[rgb(23,45,61)] border-2 rounded-md text-white font-[Poppins] text-xl font-semibold tracking-wider capitalize duration-500 px-6 py-2 mx-4 hover:bg-white hover:text-[rgb(23,45,61)] rounded"
 				>
 					Log In
 				</button>
@@ -51,9 +52,12 @@
 			</ul>
 		</nav>
 		<!-- front page image -->
-		<div class="h-[calc(100vh-76px)] lg:h-[calc(100vh-83px)] relative min-w-[250px]">
-			<img src="assets/img1.jpg" alt="image" class="h-full w-full object-cover opacity-[1] z-[-1]" />
-			<div class="absolute top-0 w-full h-full bg-gray-600 opacity-[0.3] z-[0]"></div>
+		<div class="h-[calc(100vh-76px)] lg:h-[calc(100vh-84px)] relative min-w-[300px]">
+			<!-- <img src="assets/img1.jpg" alt="image" class="h-full w-full object-cover opacity-[1] z-[-1]" /> -->
+			<video autoplay muted loop id="myVideo" class="h-full w-full object-cover opacity-[0.8] z-[-1]">
+				<source src="/assets/vid1.mp4" type="video/mp4" />
+			</video>
+			<div class="absolute top-0 w-full h-full bg-black opacity-[0.5] z-[0]"></div>
 			<!-- heading -->
 			<div class="absolute top-0 w-full h-full flex items-center flex-col justify-center z-[1]">
 				<h1 class="text-5xl md:text-6xl text-white tracking-wide font-bold opacity-1 mb-10 text-center">Start your Cruise Journey here</h1>
@@ -94,9 +98,9 @@
 			<div class="w-[min(100%,1400px)] mt-[3em] bigBox">
 				<!-- text box -->
 				<div class="p-2 flex-1 my-8">
-					<div class="max-w-[630px] mx-auto">
+					<div class="max-w-[800px] mx-auto">
 						<h1 class="text-3xl font-semibold tracking-wide leading-8 my-2 px-2">Heading goes here</h1>
-						<p class="text-lg font-normal tracking-[1px] px-2">
+						<p class="text-lg font-normal tracking-[1px] px-2 mt-4 lg:mt-8 text-start">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorum reiciendis, harum atque laborum minima, tenetur officia
 							iste iure recusandae nihil nesciunt nostrum culpa? Eaque vitae molestias iure labore temporibus est, sunt pariatur laudantium quae
 							perspiciatis debitis quam cumque velit! Eum sequi aspernatur dolorem at autem alias expedita tempora, in nihil temporibus repellat
@@ -107,7 +111,7 @@
 					</div>
 				</div>
 				<!-- image box -->
-				<div class="flex-2">
+				<div class="flex-3">
 					<div class="gridbox gap-1">
 						<div class="h-[300px] w-[min(100%,300px)] mx-auto gridItem">
 							<img src="/assets/img1.jpg" alt="img" class="h-full w-full object-cover" />
