@@ -12,9 +12,9 @@
 	<body>
 		<!-- Navbar -->
 		<!-- rgb(23 45 67 / var(--tw-bg-opacity)) -->
-		<nav class="py-6 px-10 bg-[rgb(23,45,61)] shadow lg:flex lg:items-center lg:justify-between min-w-[300px]">
+		<nav class="py-6 px-10 bg-[#1E3B65] shadow lg:flex lg:items-center lg:justify-between min-w-[300px] shadow-xl">
 			<div class="flex justify-between items-center">
-				<span class="text-6xl font-bold tracking-wider text-white leading-8 font-[Poppins] cursor-pointer"> Lake Queen </span>
+				<span class="text-3xl sm:text-6xl font-bold tracking-wider text-white leading-8 font-[Poppins] cursor-pointer"> Lake Queen </span>
 
 				<span class="text-3xl cursor-pointer mx-2 lg:hidden block text-white">
 					<ion-icon name="menu" onclick="Menu(this)"></ion-icon>
@@ -22,29 +22,29 @@
 			</div>
 
 			<ul
-				class="-mt-1 lg:flex lg:items-center z-[10] lg:z-auto lg:static absolute bg-[rgb(23,45,61)] w-full left-0 lg:w-auto lg:py-0 py-6 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+				class="-mt-1 lg:flex lg:items-center z-[10] lg:z-auto lg:static absolute bg-[#1E3B65] w-full left-0 lg:w-auto lg:py-0 py-6 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
 			>
 				<li class="mx-4 my-2 lg:my-0">
-					<a href="#" class="text-lg text-white hover:text-cyan-200 font-semibold duration-500">HOME</a>
+					<a href="#" class="text-lg text-white lg:hover:border-b-4 font-semibold">HOME</a>
 				</li>
 				<li class="mx-4 my-6 lg:my-0">
-					<a href="#" class="text-lg text-white hover:text-cyan-200 font-semibold duration-500">ABOUT</a>
+					<a href="/pages/about/About.html" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">ABOUT</a>
 				</li>
 				<li class="mx-4 my-6 lg:my-0">
-					<a href="#" class="text-lg text-white hover:text-cyan-200 font-semibold duration-500">EVENT</a>
+					<a href="#" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">EVENT</a>
 				</li>
 				<li class="mx-4 my-6 lg:my-0">
-					<a href="#" class="text-lg text-white hover:text-cyan-200 font-semibold duration-500">GALLARY</a>
+					<a href="#" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">GALLARY</a>
 				</li>
 				<li class="mx-4 my-6 lg:my-0">
-					<a href="#" class="text-lg text-white hover:text-cyan-200 font-semibold duration-500">FEEDBACK</a>
+					<a href="#" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">FEEDBACK</a>
 				</li>
 
 				<li class="mx-4 my-6 lg:my-0">
-					<a href="#" class="text-lg text-white hover:text-cyan-200 font-semibold duration-500">CONTACT</a>
+					<a href="/pages/contact/index.html" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">CONTACT</a>
 				</li>
 				<button
-					class="bg-[rgb(23,45,61)] border-2 rounded-md text-white font-[Poppins] text-xl font-semibold tracking-wider capitalize duration-500 px-6 py-2 mx-4 hover:bg-white hover:text-[rgb(23,45,61)] rounded"
+					class="bg-[#1E3B65] border-2 rounded-md text-white font-[Poppins] text-xl font-semibold tracking-wider capitalize duration-500 px-6 py-2 mx-4 hover:bg-white hover:text-[#1E3B65] rounded"
 				>
 					Log In
 				</button>
@@ -57,31 +57,30 @@
 			<video autoplay muted loop id="myVideo" class="h-full w-full object-cover opacity-[0.8] z-[-1]">
 				<source src="/assets/vid1.mp4" type="video/mp4" />
 			</video>
-			<div class="absolute top-0 w-full h-full bg-black opacity-[0.5] z-[0]"></div>
+			<div class="absolute top-0 w-full h-full bg-black opacity-[0.1] z-[0]"></div>
 			<!-- heading -->
 			<div class="absolute top-0 w-full h-full flex items-center flex-col justify-center z-[1]">
 				<h1 class="text-5xl md:text-6xl text-white tracking-wide font-bold opacity-1 mb-10 text-center">Start your Cruise Journey here</h1>
 				<button
-					class="border-2 rounded-md text-white font-[Poppins] font-semibold tracking-wide duration-500 px-8 py-4 mx-4 text-xl hover:text-black hover:bg-white"
+					class="rounded-md btn-shadow text-white font-[Poppins] font-semibold tracking-wide duration-500 px-8 py-4 mx-4 text-xl hover:text-black bg-gradient-to-r from-[#f45b1f] to-[#f28020] transition-color ease-in-out"
 				>
-					Load More
+					Book Now
 				</button>
 			</div>
 		</div>
 		<!-- About section page -->
-		<div class="min-h-screen w-full min-w-[300px] flex flex-col items-center justify-center">
-			<div class="w-[min(100%,1400px)] mx-auto my-8">
-				<h1 class="text-center text-4xl font-bold tracking-wide leading-8">About Us</h1>
-			</div>
-			<div class="w-[min(100%,1400px)] gap-2 mx-auto flex flex-col lg:flex-row items-center justify-between">
+		<div class="min-h-[70vh] w-full min-w-[300px] flex flex-col items-center justify-center">
+			<div class="w-[90%] gap-2 flex flex-col lg:flex-row items-center justify-between">
 				<!-- left box -->
 				<div class="min-h-[600px] flex-1 mb-8 md:mb-2 flex items-center justify-center">
-					<img src="/assets//img2.jpg" alt="image" class="h-full w-[90%] object-contain block blob" />
+					<img src="/assets/img2.jpg" alt="image" class="h-full w-[90%] object-contain block blob" />
 				</div>
 				<!-- right box -->
 				<div class="sm:ml-10 flex-1">
-					<h2 class="text-4xl px-2 mt-2 mb-6 tracking-wide leading-8">Content</h2>
-					<p class="text-start text-lg mt-5 lg:mr-4 p-2">
+					<h2 class="text-4xl px-2 mt-2 mb-6 tracking-wide font-bold leading-8">
+						<span class="text-[#1E3B65] text-5xl">A</span>bout <span class="text-[#1E3B65] text-5xl">U</span>s
+					</h2>
+					<p class="text-start text-xl mt-5 lg:mr-4 p-2">
 						asdd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam maiores totam cum debitis corporis perspiciatis! Unde voluptas
 						nesciunt, officiis sequi cupiditate quod? Aperiam iste et, vel officia tempora distinctio eos! Neque, esse magni ad modi eveniet quisquam
 						nihil veritatis non odit omnis explicabo quaerat corrupti. Amet laborum, esse debitis voluptas libero in ducimus cum natus at ex id illo
@@ -93,14 +92,15 @@
 			</div>
 		</div>
 		<!-- story section -->
-		<div class="min-h-screen w-full min-w-[300px] py-4 flex flex-col items-center">
-			<h1 class="mt-5 text-4xl leading-8 font-bold tracking-wide text-center">Our Services</h1>
-			<div class="w-[min(100%,1400px)] mt-[3em] bigBox">
+		<div class="min-h-[70vh] w-full min-w-[300px] py-2 flex flex-col items-center">
+			<div class="w-[90%] mt-[1em] bigBox">
 				<!-- text box -->
-				<div class="p-2 flex-1 my-8">
+				<div class="flex-1 mb-8">
 					<div class="max-w-[800px] mx-auto">
-						<h1 class="text-3xl font-semibold tracking-wide leading-8 my-2 px-2">Heading goes here</h1>
-						<p class="text-lg font-normal tracking-[1px] px-2 mt-4 lg:mt-8 text-start">
+						<h1 class="text-4xl font-bold tracking-wide leading-8 my-2 px-2">
+							<span class="text-[#1E3B65] text-5xl">O</span>ur <span class="text-[#1E3B65] text-5xl">S</span>ervices
+						</h1>
+						<p class="text-xl font-normal tracking-[1px] px-2 mt-4 lg:mt-8 text-start">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorum reiciendis, harum atque laborum minima, tenetur officia
 							iste iure recusandae nihil nesciunt nostrum culpa? Eaque vitae molestias iure labore temporibus est, sunt pariatur laudantium quae
 							perspiciatis debitis quam cumque velit! Eum sequi aspernatur dolorem at autem alias expedita tempora, in nihil temporibus repellat
@@ -113,42 +113,40 @@
 				<!-- image box -->
 				<div class="flex-3">
 					<div class="gridbox gap-1">
-						<div class="h-[300px] w-[min(100%,300px)] mx-auto gridItem">
+						<div class="h-[300px] w-[min(100%,300px)] mx-auto my-2 gridItem">
 							<img src="/assets/img1.jpg" alt="img" class="h-full w-full object-cover" />
 						</div>
-						<div class="h-[300px] w-[min(100%,300px)] mx-auto gridItem">
-							<img src="/assets/img2.jpg" alt="img" class="h-full w-full object-cover" />
+						<div class="h-[300px] w-[min(100%,300px)] mx-auto my-2 gridItem">
+							<img src="/assets/img5.jpg" alt="img" class="h-full w-full object-cover" />
 						</div>
-						<div class="h-[300px] w-[min(100%,300px)] mx-auto gridItem">
+						<div class="h-[300px] w-[min(100%,300px)] mx-auto my-2 gridItem">
 							<img src="/assets/img3.jpg" alt="img" class="h-full w-full object-cover" />
 						</div>
-						<div class="h-[300px] w-[min(100%,300px)] mx-auto gridItem">
+						<div class="h-[300px] w-[min(100%,300px)] mx-auto my-2 gridItem">
 							<img src="/assets/img4.jpg" alt="img" class="h-full w-full object-cover" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<!-- footer -->
 		<footer class="footer mt-5">
 			<div class="container">
 				<div class="row">
 					<div class="footer-col">
-						<h4>company</h4>
+						<h4>Contact Us</h4>
 						<ul>
-							<li><a href="#">about us</a></li>
-							<li><a href="#">our services</a></li>
-							<li><a href="#">privacy policy</a></li>
-							<li><a href="#">affiliate program</a></li>
+							<li><a href="#">Email Id - abc@gmaail.com</a></li>
+							<li><a href="#">Mobile No - 1234567890</a></li>
+							<li><a href="#">Address - Lorem ipsum dolor sit amet.</a></li>
 						</ul>
 					</div>
 					<div class="footer-col">
-						<h4>get help</h4>
+						<h4>useful links</h4>
 						<ul>
 							<li><a href="#">FAQ</a></li>
-							<li><a href="#">shipping</a></li>
 							<li><a href="#">returns</a></li>
-							<li><a href="#">order status</a></li>
 							<li><a href="#">payment options</a></li>
 						</ul>
 					</div>
@@ -163,6 +161,10 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="mt-[1rem] sm:mt-[3rem] w-[95%] mx-auto flex flex-col md:flex-row justify-between items-center">
+				<h1 class="text-lg sm:text-xl md:text-3xl font-semibold text-white leading-8 tracking-wide capitalize">All right reserved © Lake Queen</h1>
+				<h1 class="text-lg sm:text-xl md:text-3xl font-semibold text-white leading-8 tracking-wide capitalize">Powered by infosoft networks</h1>
 			</div>
 		</footer>
 	</body>

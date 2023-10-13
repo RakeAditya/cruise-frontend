@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" type="text/css" href="/style.css" />
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	</head>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="py-6 px-10 bg-[#1E3B65] shadow lg:flex lg:items-center lg:justify-between min-w-[300px] shadow-xl">
+        <div class="flex justify-between items-center">
+            <span class="text-3xl sm:text-6xl font-bold tracking-wider text-white leading-8 font-[Poppins] cursor-pointer"> Lake Queen </span>
+
+            <span class="text-3xl cursor-pointer mx-2 lg:hidden block text-white">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul
+            class="-mt-1 lg:flex lg:items-center z-[10] lg:z-auto lg:static absolute bg-[#1E3B65] w-full left-0 lg:w-auto lg:py-0 py-6 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        >
+            <li class="mx-4 my-2 lg:my-0">
+                <a href="#" class="text-lg text-white lg:hover:border-b-4 font-semibold">HOME</a>
+            </li>
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="/pages/about/About.html" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">ABOUT</a>
+            </li>
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">EVENT</a>
+            </li>
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">GALLARY</a>
+            </li>
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">FEEDBACK</a>
+            </li>
+
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-lg text-white lg:hover:border-b-4 font-semibold duration-500">CONTACT</a>
+            </li>
+            <button
+                class="bg-[#1E3B65] border-2 rounded-md text-white font-[Poppins] text-xl font-semibold tracking-wider capitalize duration-500 px-6 py-2 mx-4 hover:bg-white hover:text-[#1E3B65] rounded"
+            >
+                Log In
+            </button>
+            <h2 class=""></h2>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="containerf">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">Email Id - abc@gmaail.com</a></li>
+                        <li><a href="#">Mobile No - 1234567890</a></li>
+                        <li><a href="#">Address - Lorem ipsum dolor sit amet.</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>useful links</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-[1rem] sm:mt-[3rem] w-[95%] mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-lg sm:text-xl md:text-3xl font-semibold text-white leading-8 tracking-wide capitalize">All right reserved © Lake Queen</h1>
+            <h1 class="text-lg sm:text-xl md:text-3xl font-semibold text-white leading-8 tracking-wide capitalize">Powered by infosoft networks</h1>
+        </div>
+    </footer>
+</body>
+</html>

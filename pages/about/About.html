@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" type="text/css" href="/pages/about/style.css" />
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+		<!-- embla carousal -->
+		<title>Lake Queen</title>
+	</head>
+	<body>
+		<!-- nav -->
+		<nav class="py-6 px-10 bg-[#1E3B65] shadow lg:flex lg:items-center lg:justify-between min-w-[300px]">
+			<div class="flex justify-between items-center">
+				<span class="text-3xl sm:text-6xl font-bold tracking-wider text-white leading-8 font-[Poppins] cursor-pointer"> Lake Queen </span>
+
+				<span class="text-3xl cursor-pointer mx-2 lg:hidden block text-white">
+					<ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+				</span>
+			</div>
+
+			<ul
+				class="-mt-1 lg:flex lg:items-center z-[10] lg:z-auto lg:static absolute bg-[#1E3B65] w-full left-0 lg:w-auto lg:py-0 py-6 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+			>
+				<li class="mx-4 my-2 lg:my-0">
+					<a href="/index.html" class="text-lg text-white hover:text-xl font-semibold duration-500">HOME</a>
+				</li>
+				<li class="mx-4 my-6 lg:my-0">
+					<a href="/pages/about/About.html" class="text-lg text-white hover:text-xl font-semibold duration-500">ABOUT</a>
+				</li>
+				<li class="mx-4 my-6 lg:my-0">
+					<a href="#" class="text-lg text-white hover:text-xl font-semibold duration-500">EVENT</a>
+				</li>
+				<li class="mx-4 my-6 lg:my-0">
+					<a href="#" class="text-lg text-white hover:text-xl font-semibold duration-500">GALLERY</a>
+				</li>
+				<li class="mx-4 my-6 lg:my-0">
+					<a href="#" class="text-lg text-white hover:text-xl font-semibold duration-500">FEEDBACK</a>
+				</li>
+
+				<li class="mx-4 my-6 lg:my-0">
+					<a href="/pages/contact/index.html" class="text-lg text-white hover:text-xl font-semibold duration-500">CONTACT</a>
+				</li>
+				<button
+					class="bg-[#1E3B65] border-2 rounded-md text-white font-[Poppins] text-xl font-semibold tracking-wider capitalize duration-500 px-6 py-2 mx-4 hover:bg-white hover:text-[#1E3B65] rounded"
+				>
+					Log In
+				</button>
+				<h2 class=""></h2>
+			</ul>
+		</nav>
+		<!-- main section -->
+		<div class="container min-w-[300px] sm:min-w-full mx-auto">
+			<div class="arrow l" onclick="prev()">
+				<img src="/assets/l.png" alt="l" />
+			</div>
+			<div class="slide slide-1">
+				<div class="caption">
+					<h3>New York</h3>
+					<p>We love the Big Apple!</p>
+				</div>
+			</div>
+			<div class="slide slide-2">
+				<div class="caption">
+					<h3>Los Angeles</h3>
+					<p>LA is always so much fun!</p>
+				</div>
+			</div>
+			<div class="slide slide-3">
+				<div class="caption">
+					<h3>Bahar Dar</h3>
+					<p>Thank you, Bahar Dar!</p>
+				</div>
+			</div>
+			<div class="arrow r" onclick="next()">
+				<img src="/assets/r.png" alt="r" />
+			</div>
+		</div>
+
+		<!-- section -->
+		<div class="min-h-[60vh] min-w-[300px] w-full">
+			<div class="w-[90%] mx-auto mt-8 flex items-center justify-between flex-col">
+				<h1 class="text-3xl tracking-wider font-bold leading-8 my-10">Heading</h1>
+				<p class="text-xl tracking-wide font-normal my-5 text-start">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, autem unde voluptatum harum voluptatem, nostrum accusantium maxime aperiam
+					accusamus quisquam veniam dicta obcaecati iure nihil sit perferendis odit eius corrupti rerum eos error itaque ad. Impedit cumque voluptate
+					nam qui praesentium delectus, fuga temporibus assumenda. Laborum architecto rerum, fuga blanditiis similique odit! Dolore deleniti maiores
+					vero blanditiis minima minus, voluptate autem assumenda voluptatum illo nemo magni, rerum quis distinctio sapiente explicabo ducimus, enim
+					culpa amet nesciunt excepturi vel dolores? Odio quisquam eaque ratione nisi dicta reiciendis accusamus numquam aliquid, assumenda optio odit
+					quae earum facere cumque velit. Provident, qui ea ipsa id dignissimos quos neque, facilis, pariatur autem doloribus quae quia ducimus
+					officia ipsam corrupti rerum quasi voluptas ut ratione vel? Sed unde adipisci quidem rerum commodi enim voluptatem animi aperiam similique,
+					tenetur eum quis. Natus molestias quas in quod, neque sed doloremque quis debitis, voluptatum recusandae asperiores a quae, molestiae dolore
+					labore sunt? Maiores distinctio ad ex nobis nostrum, accusantium libero sunt quo, ducimus eos qui doloremque dignissimos ut eveniet ipsam?
+					Officia sit maxime eveniet adipisci repudiandae accusamus sint a corporis veritatis perferendis, beatae quod quis architecto laboriosam
+					laudantium modi vitae eos sed excepturi veniam facere. Dignissimos, reiciendis numquam?
+				</p>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="containerf">
+				<div class="row">
+					<div class="footer-col">
+						<h4>Contact Us</h4>
+						<ul>
+							<li><a href="#">Email Id - abc@gmaail.com</a></li>
+							<li><a href="#">Mobile No - 1234567890</a></li>
+							<li><a href="#">Address - Lorem ipsum dolor sit amet.</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>useful links</h4>
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">returns</a></li>
+							<li><a href="#">payment options</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col">
+						<h4>follow us</h4>
+						<div class="social-links">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-[1rem] sm:mt-[3rem] w-[95%] mx-auto flex flex-col md:flex-row justify-between items-center">
+				<h1 class="text-lg sm:text-xl md:text-3xl font-semibold text-white leading-8 tracking-wide capitalize">All right reserved © Lake Queen</h1>
+				<h1 class="text-lg sm:text-xl md:text-3xl font-semibold text-white leading-8 tracking-wide capitalize">Powered by infosoft networks</h1>
+			</div>
+		</footer>
+	</body>
+	<script>
+		let slide = document.querySelectorAll('.slide');
+		var current = 0;
+
+		function cls() {
+			for (let i = 0; i < slide.length; i++) {
+				slide[i].style.display = 'none';
+			}
+		}
+
+		function next() {
+			cls();
+			if (current === slide.length - 1) current = -1;
+			current++;
+
+			slide[current].style.display = 'block';
+			slide[current].style.opacity = 0.4;
+
+			var x = 0.4;
+			var intX = setInterval(function () {
+				x += 0.1;
+				slide[current].style.opacity = x;
+				if (x >= 1) {
+					clearInterval(intX);
+					x = 0.4;
+				}
+			}, 100);
+		}
+
+		function prev() {
+			cls();
+			if (current === 0) current = slide.length;
+			current--;
+
+			slide[current].style.display = 'block';
+			slide[current].style.opacity = 0.4;
+
+			var x = 0.4;
+			var intX = setInterval(function () {
+				x += 0.1;
+				slide[current].style.opacity = x;
+				if (x >= 1) {
+					clearInterval(intX);
+					x = 0.4;
+				}
+			}, 100);
+		}
+
+		function start() {
+			cls();
+			slide[current].style.display = 'block';
+		}
+		start();
+		setInterval(() => {
+			next();
+		}, 4000);
+	</script>
+</html>
